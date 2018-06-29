@@ -1,29 +1,31 @@
 class Monster{
-    constructor(name, attack, health, speed, strength, agility, wisdom, intelligence){
-    this.name = name;
-    this.attack = attack;
-    this.health = health;
-    this.speed = speed;
-    this.strength = strength;
-    this.agility = agility;
-    this.wisdom = wisdom;
-    this.intelligence = intelligence;
+    constructor(name, health, speed, strength, agility, wisdom, intelligence){
+        this.name = name;
+        this.health = health;
+        this.speed = speed;
+        this.strength = strength;
+        this.agility = agility;
+        this.wisdom = wisdom;
+        this.intelligence = intelligence;
+    }
+    run(){
+
     }
 }
 class Flying extends Monster{
-    constructor(name, attack, health, speed, strength, agility, wisdom, intelligence){
-    super(name, attack, health, speed, strength, agility, wisdom, intelligence);
+    constructor(name, health, speed, strength, agility, wisdom, intelligence){
+        super(name, health, speed, strength, agility, wisdom, intelligence);
     }
     attack(){
-
+        
     }
     defend(){
 
     }
 }
 class Fighter extends Monster{
-    constructor(name, attack, health, speed, strength, agility, wisdom, intelligence){
-    super(name, attack, health, speed, strength, agility, wisdom, intelligence);
+    constructor(name, health, speed, strength, agility, wisdom, intelligence){
+        super(name, health, speed, strength, agility, wisdom, intelligence);
     }
     attack(){
 
@@ -33,8 +35,8 @@ class Fighter extends Monster{
     }
 }
 class Rogue extends Monster{
-    constructor(name, attack, health, speed, strength, agility, wisdom, intelligence){
-    super(name, attack, health, speed, strength, agility, wisdom, intelligence);
+    constructor(name, health, speed, strength, agility, wisdom, intelligence){
+        super(name, health, speed, strength, agility, wisdom, intelligence);
     }
     attack(){
 
@@ -43,9 +45,20 @@ class Rogue extends Monster{
 
     }
 }
+class Shaman extends Monster{
+    constructor(name, health, speed, strength, agility, wisdom, intelligence){
+        super(name, health, speed, strength, agility, wisdom, intelligence);
+    }
+    attack(){
+  
+    }
+    defend(){
+  
+    }
+}
 class Wizard extends Monster{
-    constructor(name, attack, health, speed, strength, agility, wisdom, intelligence){
-      super(name, attack, health, speed, strength, agility, wisdom, intelligence);
+    constructor(name, health, speed, strength, agility, wisdom, intelligence){
+        super(name, health, speed, strength, agility, wisdom, intelligence);
     }
     attack(){
   
